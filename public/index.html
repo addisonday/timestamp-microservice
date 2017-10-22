@@ -11,9 +11,12 @@
   <script src="js/app.js"></script>
 
 </head>
-<body ng-app="timestamp" ng-controller="MainCtrl">
+<body ng-app="timestamp" ng-controller="MainController">
   <div>
     <h1>Timestamp Microservice</h1>
+    <p ng-bind="dateVal">{{ dateVal }}</p>
+
+    <div ng-view></div>
   </div>
 
 </body>

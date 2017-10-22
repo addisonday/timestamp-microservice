@@ -1,0 +1,1 @@
+angular.module('timestamp', ['appRoutes', 'MainCtrl']);
