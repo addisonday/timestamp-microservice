@@ -10,7 +10,8 @@ var express    = require('express'),
 app.use(express.static(path.join(__dirname, 'public'))); // Serve files in public folder
 app.use(bodyParser.json()); // parse application/json
 
-
+// routes ==================================================
+require('./app/routes')(app); // configure our routes
 
 // listen (start app with node server.js) ======================================
 app.listen(3000, function (err){
@@ -19,4 +20,4 @@ app.listen(3000, function (err){
   }else {
     console.log("Running of port 3000");
   }
-})
+});
