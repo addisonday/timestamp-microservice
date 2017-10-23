@@ -17,7 +17,7 @@ module.exports = function(app) {
       var unixDate = new Date(dateVal).getTime()/1000;
     } else{
       var unixDate = dateVal;
-      var naturalDate = new Date(dateVal * 1000)
+      var naturalDate = new Date(dateVal * 1000);
       naturalDate = naturalDate.toLocaleString("en-us", dateFormat);
     }
 
