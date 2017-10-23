@@ -1,1 +1,1 @@
-angular.module('timestamp', ['appRoutes', 'MainCtrl']);
+angular.module('timestamp', ['ngRoute', 'appRoutes', 'MainCtrl']);

@@ -21,3 +21,4 @@ app.listen(3000, function (err){
     console.log("Running of port 3000");
   }
 });
+exports = module.exports = app; // expose app
